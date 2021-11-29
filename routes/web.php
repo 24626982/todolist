@@ -1,5 +1,5 @@
 <?php
-use App\Http\Controllers\TestController;
+//use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::any('/123',[TestController::class,'test']);
+//Route::get('/', function () {
+//    return view('layouts.master');
+//});
+Route::get('/',[\App\Http\Controllers\TestController::class,'test']);
